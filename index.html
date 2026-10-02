@@ -3,116 +3,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GREEN GIANT MULTIVERSE | Brand Identity & Visual Systems</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<title>Green Giant Multiverse</title>
+<link rel="icon" type="image/png" href="logo.png">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#061a0f;color:#e8f5e9}
-header{background:#0a3d1f;padding:14px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99;border-bottom:1px solid #144a2b}
-.logo-area{display:flex;align-items:center;gap:12px}
-.logo-img{width:50px;height:50px;background:#fff;border-radius:50%;object-fit:contain;padding:3px}
-.logo-text{font-weight:900;line-height:1}
-.logo-text small{display:block;font-size:9px;letter-spacing:3px;font-weight:600;color:#a7f3d0;margin-top:2px}
-nav a{color:#c7e8d3;margin-left:22px;font-weight:600;font-size:14px;text-decoration:none}
-nav a:hover{color:#facc15}
-.hero{background:#0a3d1f;padding:80px 6%;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
-.badge{background:#0f5a2f;color:#a7f3d0;padding:7px 14px;border-radius:100px;font-size:11px;font-weight:800;letter-spacing:1px;display:inline-block;margin-bottom:18px}
-.hero h1{font-size:52px;font-weight:900;line-height:.95}
-.hero h1 span{color:#facc15}
-.hero p{margin:20px 0;color:#b7d8c5;max-width:560px;font-size:17px;line-height:1.6}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{padding:14px 26px;border-radius:100px;font-weight:800;font-size:14px;display:inline-block;text-decoration:none}
-.btn-green{background:#22c55e;color:#052e16}
-.btn-outline{border:1px solid #2a6b45;color:#fff}
-.hero-logo-box{background:#0e4d26;border:1px solid #1a6b3a;border-radius:24px;padding:26px;text-align:center}
-.hero-logo-box img{width:100%;max-width:340px;border-radius:12px}
-section{padding:75px 6%}
-.white{background:#f6fdf7;color:#0a2a18}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:26px}
-.card{background:#0f2f1e;border:1px solid #1f5a3a;padding:26px;border-radius:18px}
-.white .card{background:#fff;border:1px solid #d8efe0;color:#123a24}
-.card h3{margin-bottom:6px}
-.stats{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
-.stat b{font-size:28px;display:block;color:#22c55e}
-footer{background:#03150b;color:#7aa78f;padding:30px 6%;text-align:center;border-top:1px solid #123a24;font-size:13px}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding:50px 6%}.hero h1{font-size:34px}nav{display:none}}
+:root{--green:#0a3d1f;--yellow:#e6d835;--white:#fff;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,sans-serif;}
+body{background:#fff;color:#111;line-height:1.6;}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;background:#0a3d1f;position:sticky;top:0;}
+.logo{display:flex;align-items:center;gap:12px;}
+.logo-img{width:44px;height:44px;object-fit:contain;background:transparent!important;display:block;}
+.logo-text{color:white;font-weight:800;font-size:18px;}
+.logo-text span{color:#e6d835;}
+.hero{background:#0a3d1f;color:white;padding:70px 5%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;}
+.hero h1{font-size:48px;line-height:1.1;font-weight:900;margin-bottom:16px;}
+.hero h1 span{color:#e6d835;}
+.stats{display:flex;gap:28px;margin:28px 0;flex-wrap:wrap;}
+.stat{font-size:14px;opacity:.9;}
+.stat span{display:block;font-size:32px;font-weight:900;color:#e6d835;line-height:1;}
+.btn{display:inline-block;padding:14px 28px;border-radius:100px;font-weight:700;}
+.btn-green{background:#e6d835;color:#0a3d1f;}
+.btn-outline{border:1px solid rgba(255,255,255,.3);color:white;margin-left:12px;}
+.section{padding:70px 5%;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:30px;}
+.service-card{border:1px solid #e8e8e8;border-radius:18px;padding:26px;}
+.contact-box{background:#0a3d1f;color:white;border-radius:24px;padding:36px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+@media(max-width:900px){.hero{grid-template-columns:1fr;}.hero h1{font-size:36px;}}
 </style>
 </head>
 <body>
-<header>
-<div class="logo-area">
-<img src="logo.jpg" class="logo-img" alt="logo">
-<div class="logo-text">GREEN GIANT<br>MULTIVERSE<small>EXPANDING YOUR UNIVERSE</small></div>
-</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#work">Work</a>
-<a href="#contact">Contact</a>
+<nav class="navbar">
+  <div class="logo">
+    <img class="logo-img" src="logo.png" alt="Green Giant Multiverse Logo">
+    <div class="logo-text">GREEN GIANT <span>MULTIVERSE</span></div>
+  </div>
 </nav>
-</header>
-
-<div class="hero" id="home">
-<div>
-<div class="badge">Graphic Designer • Brand Identity • Visual Systems</div>
-<h1>Creating Professional<br><span>Visual Systems</span><br>for Growing Businesses</h1>
-<p>I'm <b>Wisdom Samuel</b>, founder of GREEN GIANT MULTIVERSE. With 3+ years of experience and 200+ design assets delivered across 20+ brands, I help businesses look credible, consistent, and unforgettable.</p>
-<div class="btns">
-<a class="btn btn-green" href="https://wa.me/2348100000000" target="_blank">Chat on WhatsApp</a>
-<a class="btn btn-outline" href="#services">View Services</a>
-</div>
-<div <a class="btn btn-green" href="https://wa.me/https://wa.me/2347038655690?text=Hello%20Wisdom%2C%20I%20want%20to%20build%20with%20Green%20Giant%20Multiverse
-<div class="stat"><b>200+</b>Assets Delivered</div>
-<div class="stat"><b>20+</b>Brands</div>
-<div class="stat"><b>3+</b>Years</div>
-</div>
-</div>
-<div class="hero-logo-box">
-<img src="logo.jpg" alt="Green Giant Multiverse Logo">
-<p style="margin-top:14px;color:#facc15;font-weight:800;font-size:21px;line-height:1.2">Expanding Your Universe<br><span style="color:#fff">Transforming Your Vision</span></p>
-</div>
-</div>
-
-<section class="white" id="about">
-<h2 style="font-size:38px;font-weight:900;max-width:750px;line-height:1.1">A strong visual identity turns an unfamiliar business into a brand people recognize, remember, and trust.</h2>
-<p style="margin-top:18px;max-width:800px;color:#334e3e;font-size:18px;line-height:1.7">
-I'm a Graphic Designer specializing in Brand Identity, Visual Design, Marketing Design, and Print Production.<br><br>
-Over the course of my work I've delivered 200+ design assets across 20+ businesses and organizations — from logos and full brand systems to social media graphics, flyers, packaging, apparel, business cards, and company profiles.<br><br>
-My experience spans both printing-press environments and direct client projects, so every design is not just beautiful — it's production-ready and built to work in the real world.
-<a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%2C%20I%20want%20to%20build%20with%20Green%20Giant%20Multiverse" target="_blank">Chat on WhatsApp</a></p>
+<section class="hero">
+  <div>
+    <h1>Creating Professional<br><span>Visual Systems</span> for Growing Business</h1>
+    <p style="font-size:18px;opacity:.9;margin:16px 0 24px;">A strong visual identity turns an unfamiliar business into a trusted brand. We build brands that expand your universe and transform your vision.</p>
+    <div class="stats">
+      <div class="stat"><span>200+</span>Assets Delivered</div>
+      <div class="stat"><span>20+</span>Brands</div>
+      <div class="stat"><span>3+</span>Years</div>
+    </div>
+    <p style="margin:20px 0 26px;opacity:.9;">I'm a Graphic Designer specializing in Brand Identity, Visual Design, Marketing Design, and Print Production. Over the course of my work I've delivered 200+ design assets across 20+ brands including logos - from logos and full brand systems to social media graphics, flyers, packaging, apparel, business cards, and company profiles.<br><br>My experience spans both printing-press environments and direct client projects, so every design is not just beautiful - it's production-ready and built to work in the real world.</p>
+    <a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%20at%20Green%20Giant%20Multiverse%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20branding." target="_blank">Chat on WhatsApp</a>
+    <a class="btn btn-outline" href="#services">View Services</a>
+  </div>
+  <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;display:flex;align-items:center;">
+    <div><h3>Brand Identity • Print • Digital</h3><p style="opacity:.8;margin-top:8px;">Available for branding projects worldwide — based in Port Harcourt, NG.</p><p style="margin-top:18px;font-weight:600;color:#e6d835;">Let's Build Your Giant Brand</p><p style="margin-top:12px;font-size:14px;opacity:.7;">Email: greengiantmultiverse@gmail.com</p></div>
+  </div>
 </section>
-
-<section id="services">
-<h2 style="font-size:32px;font-weight:900">Services</h2>
-<div class="card-grid">
-<div class="card"><h3>🎯 Brand Identity</h3><p>Logo, color system, typography & full brand guidelines.</p></div>
-<div class="card"><h3>🏘️ Real Estate Branding</h3><p>Estate names, signage, brochure & sales materials that sell plots fast.</p></div>
-<div class="card"><h3>🏨 Hospitality Branding</h3><p>Hotels, lounges & shortlet visuals that look premium.</p></div>
-<div class="card"><h3>📦 Print & Visual Design</h3><p>Flyers, social media, packaging, business cards, company profiles.</p></div>
-</div>
+<section id="services" class="section">
+  <h2 style="font-size:36px;font-weight:900;color:#0a3d1f;margin-bottom:18px;">Services</h2>
+  <div class="services-grid">
+    <div class="service-card"><h3>Brand Identity</h3><p>Logo design, brand guidelines, visual systems that make you recognizable and trusted.</p></div>
+    <div class="service-card"><h3>Marketing Design</h3><p>Flyers, social media, packaging, apparel, business cards, company profiles.</p></div>
+    <div class="service-card"><h3>Print Production</h3><p>Production-ready files built for real-world printing press environments.</p></div>
+  </div>
 </section>
-
-<section class="white" id="work">
-<h2 style="font-size:32px;font-weight:900">Work</h2>
-<p style="color:#556b5e">Selected projects — replace these with your real designs.</p>
-<div class="card-grid">
-<div class="card"><h3>Project One</h3><p>Luxury Real Estate Visual System</p></div>
-<div class="card"><h3>Project Two</h3><p>Hotel Brand Identity System</p></div>
-<div class="card"><h3>Project Three</h3><p>Corporate Rebrand & Stationery</p></div>
-</div>
+<section class="section">
+  <div class="contact-box">
+    <div><h2 style="color:white;font-size:28px;">Ready to expand your universe?</h2><p style="opacity:.9;">Chat directly on WhatsApp — quick response.</p></div>
+    <a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%2C%20I%20need%20a%20brand%20identity%20for%20my%20business." target="_blank">Chat on WhatsApp</a>
+  </div>
 </section>
-
-<section id="contact">
-<div style="background:#0f2f1e;border:1px solid #1f5a3a;border-radius:24px;padding:42px;text-align:center">
-<h2 style="font-size:32px;font-weight:900">Let's Build Your Giant Brand</h2>
-<p style="color:#a8c9b5;margin:14px 0">Available for branding projects worldwide — based in Port Harcourt, NG</p>
-<p>Email: greengiantmultiverse@gmail.com</p>
-<br>
-<a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%2C%20I%20want%20to%20build%20with%20Green%20Giant%20Multiverse">Chat on WhatsApp</a>
-</div>
-</section>
-
-<footer>© 2026 GREEN GIANT MULTIVERSE • Founded by Wisdom Samuel</footer>
+<footer style="background:#051a0d;color:rgba(255,255,255,.7);padding:40px 5%;text-align:center;font-size:14px;">© 2026 Green Giant Multiverse — Expanding Your Universe, Transforming Your Vision<br>Port Harcourt, Nigeria | 07038655690</footer>
 </body>
-</html>
+  </html>
