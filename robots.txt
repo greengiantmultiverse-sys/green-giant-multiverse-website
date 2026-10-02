@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greengiantmultiverse-sys.github.io/green-giant-multiverse-website/sitemap.xml
