@@ -1,96 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Google tag (gtag.js) - Green Giant Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WLE5SB8MR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4WLE5SB8MR');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Giant Multiverse</title>
-<link rel="icon" type="image/png" href="logo.png">
-<style>
-:root{--green:#0a3d1f;--yellow:#e6d835;--white:#fff;}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,sans-serif;}
-body{background:#fff;color:#111;line-height:1.6;}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;background:#0a3d1f;position:sticky;top:0;}
-.logo{display:flex;align-items:center;gap:12px;}
-.logo-img{width:44px;height:44px;object-fit:contain;background:transparent!important;display:block;}
-.logo-text{color:white;font-weight:800;font-size:18px;}
-.logo-text span{color:#e6d835;}
-.hero{background:#0a3d1f;color:white;padding:70px 5%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;}
-.hero h1{font-size:48px;line-height:1.1;font-weight:900;margin-bottom:16px;}
-.hero h1 span{color:#e6d835;}
-.stats{display:flex;gap:28px;margin:28px 0;flex-wrap:wrap;}
-.stat{font-size:14px;opacity:.9;}
-.stat span{display:block;font-size:32px;font-weight:900;color:#e6d835;line-height:1;}
-.btn{display:inline-block;padding:14px 28px;border-radius:100px;font-weight:700;}
-.btn-green{background:#e6d835;color:#0a3d1f;}
-.btn-outline{border:1px solid rgba(255,255,255,.3);color:white;margin-left:12px;}
-.section{padding:70px 5%;}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:30px;}
-.service-card{border:1px solid #e8e8e8;border-radius:18px;padding:26px;}
-.contact-box{background:#0a3d1f;color:white;border-radius:24px;padding:36px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;}
-@media(max-width:900px){.hero{grid-template-columns:1fr;}.hero h1{font-size:36px;}}
-</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WLE5SB8MR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4WLE5SB8MR');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Giant Multiverse | Graphic Designer • Brand Identity & Visual Design</title>
+  <meta name="description" content="Wisdom Samuel – Graphic Designer specializing in Brand Identity, Visual Design, Marketing Design & Print Production. 200+ design assets delivered for 20+ businesses.">
+  <meta name="keywords" content="graphic designer, brand identity, logo design, visual design, print design, Nigeria graphic designer, Wisdom Samuel, Green Giant Multiverse">
+  <meta name="author" content="Wisdom Samuel | GREEN GIANT MULTIVERSE">
+  <link rel="canonical" href="https://greengiantmultiverse-sys.github.io/green-giant-multiverse-website/">
+  <meta property="og:title" content="GREEN GIANT MULTIVERSE | Graphic Designer & Brand Identity">
+  <meta property="og:description" content="Creating professional visual systems for growing businesses.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@GREENMULTIVERSE">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="navbar">
-  <div class="logo">
-    <img class="logo-img" src="logo.png" alt="Green Giant Multiverse Logo">
-    <div class="logo-text">GREEN GIANT <span>MULTIVERSE</span></div>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <img class="logo-img" src="logo.png" alt="Green Giant Multiverse Logo">
+      <div class="logo-text">GREEN GIANT <span>MULTIVERSE</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/2347038655690?text=Hello%20Wisdom%20at%20Green%20Giant%20Multiverse%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20branding." target="_blank">WhatsApp</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
-<section class="hero">
-  <div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="hero-left">
     <h1>Creating Professional<br><span>Visual Systems</span> for Growing Business</h1>
-    <p style="font-size:18px;opacity:.9;margin:16px 0 24px;">A strong visual identity turns an unfamiliar business into a trusted brand. We build brands that expand your universe and transform your vision.</p>
+    <p class="hero-lead">A strong visual identity turns an unfamiliar business into a trusted brand. We build brands that expand your universe and transform your vision.</p>
     <div class="stats">
       <div class="stat"><span>200+</span>Assets Delivered</div>
       <div class="stat"><span>20+</span>Brands</div>
       <div class="stat"><span>3+</span>Years</div>
     </div>
-    <p style="margin:20px 0 26px;opacity:.9;">I'm a Graphic Designer specializing in Brand Identity, Visual Design, Marketing Design, and Print Production. Over the course of my work I've delivered 200+ design assets across 20+ brands including logos - 
-    from logos and full brand systems to social media graphics, flyers, packaging, apparel, business cards, and company profiles.<br><br>My experience spans both printing-press environments and direct client projects, so every design is not just beautiful - it's production-ready and built to work in the real world.</p>
-    <a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%20at%20Green%20Giant%20Multiverse%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20branding." target="_blank">Chat on WhatsApp</a>
-    <a class="btn btn-outline" href="#services">View Services</a>
+    <p class="hero-about">I'm a Graphic Designer specializing in Brand Identity, Visual Design, Marketing Design, and Print Production. Over the course of my work I've delivered 200+ design assets across 20+ brands — from logos and full brand systems to social media graphics, flyers, packaging, apparel, business cards, and company profiles.<br><br>My experience spans both printing-press environments and direct client projects, so every design is not just beautiful — it's production-ready and built to work in the real world.</p>
+    <div class="hero-cta">
+      <a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%20at%20Green%20Giant%20Multiverse%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20branding." target="_blank">Chat on WhatsApp</a>
+      <a class="btn btn-outline" href="#services">View Services</a>
+    </div>
   </div>
-  <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:28px;display:flex;align-items:center;">
-    <div><h3>Brand Identity • Print • Digital</h3><p style="opacity:.8;margin-top:8px;">Available for branding projects worldwide — based in Port Harcourt, NG.</p><p style="margin-top:18px;font-weight:600;color:#e6d835;">Let's Build Your Giant Brand</p><p style="margin-top:12px;font-size:14px;opacity:.7;">Email: greengiantmultiverse@gmail.com</p></div>
+  <div class="hero-right">
+    <div class="hero-card">
+      <h3>Brand Identity • Print • Digital</h3>
+      <p>Available for branding projects worldwide — based in Port Harcourt, NG.</p>
+      <p class="hero-card-cta">Let's Build Your Giant Brand</p>
+      <p class="hero-card-email">Email: greengiantmultiverse@gmail.com</p>
+    </div>
   </div>
 </section>
+
+<!-- ========== SERVICES ========== -->
 <section id="services" class="section">
-  <h2 style="font-size:36px;font-weight:900;color:#0a3d1f;margin-bottom:18px;">Services</h2>
+  <div class="section-header">
+    <h2>Services</h2>
+    <p>Complete visual solutions from concept to production-ready files.</p>
+  </div>
   <div class="services-grid">
-    <div class="service-card"><h3>Brand Identity</h3><p>Logo design, brand guidelines, visual systems that make you recognizable and trusted.</p></div>
-    <div class="service-card"><h3>Marketing Design</h3><p>Flyers, social media, packaging, apparel, business cards, company profiles.</p></div>
-    <div class="service-card"><h3>Print Production</h3><p>Production-ready files built for real-world printing press environments.</p></div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-fingerprint"></i></div>
+      <h3>Brand Identity</h3>
+      <p>Logo design, brand guidelines, visual systems that make you recognizable and trusted.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+      <h3>Marketing Design</h3>
+      <p>Flyers, social media, packaging, apparel, business cards, company profiles.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-print"></i></div>
+      <h3>Print Production</h3>
+      <p>Production-ready files built for real-world printing press environments.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-palette"></i></div>
+      <h3>Visual & Graphic Design</h3>
+      <p>Clean, professional visuals for digital and print that communicate clearly.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+      <h3>Social Media Graphics</h3>
+      <p>Consistent, scroll-stopping content templates that strengthen your online presence.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-box-open"></i></div>
+      <h3>Packaging & Apparel</h3>
+      <p>Product packaging, labels and apparel graphics that make your brand tangible.</p>
+    </div>
   </div>
 </section>
-<section class="section">
+
+<!-- ========== PORTFOLIO / WORK ========== -->
+<section id="work" class="section section-alt">
+  <div class="section-header">
+    <h2>Featured Work</h2>
+    <p>A selection of projects that show the quality and range of what I deliver. Real mockups coming soon — structure is ready.</p>
+  </div>
+
+  <div class="portfolio-grid">
+    <!-- Project 1 -->
+    <article class="portfolio-card">
+      <div class="portfolio-img placeholder-1">
+        <span class="portfolio-placeholder-label">Logo & Brand Identity</span>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">Brand Identity</span>
+        <h3>Complete Brand System</h3>
+        <p>Logo, color palette, typography & guidelines for a growing business.</p>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="portfolio-card">
+      <div class="portfolio-img placeholder-2">
+        <span class="portfolio-placeholder-label">Packaging Design</span>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">Packaging</span>
+        <h3>Product Packaging</h3>
+        <p>Print-ready packaging that stands out on the shelf and builds trust.</p>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="portfolio-card">
+      <div class="portfolio-img placeholder-3">
+        <span class="portfolio-placeholder-label">Apparel Branding</span>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">Apparel</span>
+        <h3>Apparel & Merch</h3>
+        <p>Wearable branding designed for real production and everyday use.</p>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="portfolio-card">
+      <div class="portfolio-img placeholder-4">
+        <span class="portfolio-placeholder-label">Marketing Materials</span>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">Marketing</span>
+        <h3>Flyers & Campaign Assets</h3>
+        <p>High-impact promotional designs ready for print and digital use.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="portfolio-cta">
+    <p>Want to see work relevant to your industry? I’ll send tailored samples.</p>
+    <a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%2C%20I%27d%20like%20to%20see%20portfolio%20samples%20relevant%20to%20my%20business." target="_blank">Request Portfolio Samples</a>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIALS ========== -->
+<section id="testimonials" class="section">
+  <div class="section-header">
+    <h2>What Clients Say</h2>
+    <p>Real feedback from businesses and organizations I’ve worked with.</p>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <blockquote>
+        “Wisdom delivered our files perfectly on time and print-ready. The brand identity he created for us has completely elevated how people see our organization.”
+      </blockquote>
+      <div class="testimonial-author">
+        <strong>Client</strong>
+        <span>Organization / Community Group</span>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <blockquote>
+        “Professional, fast, and he understands both design and production. Our packaging and marketing materials came out exactly as we envisioned — and better.”
+      </blockquote>
+      <div class="testimonial-author">
+        <strong>Business Owner</strong>
+        <span>Local Brand, Port Harcourt</span>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-stars">★★★★★</div>
+      <blockquote>
+        “From logo to full company profile, everything was consistent and high quality. Working with Green Giant Multiverse was smooth from start to finish.”
+      </blockquote>
+      <div class="testimonial-author">
+        <strong>Entrepreneur</strong>
+        <span>Growing Business</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section">
   <div class="contact-box">
-    <div><h2 style="color:white;font-size:28px;">Ready to expand your universe?</h2><p style="opacity:.9;">Chat directly on WhatsApp — quick response.</p></div>
+    <div>
+      <h2>Ready to expand your universe?</h2>
+      <p>Chat directly on WhatsApp — quick response. Or reach me on any of the channels below.</p>
+    </div>
     <a class="btn btn-green" href="https://wa.me/2347038655690?text=Hello%20Wisdom%2C%20I%20need%20a%20brand%20identity%20for%20my%20business." target="_blank">Chat on WhatsApp</a>
   </div>
-</section>
-<footer style="background:#051a0d;color:rgba(255,255,255,.7);padding:40px 5%;text-align:center;font-size:14px;">© 2026 Green Giant Multiverse — Expanding Your Universe, Transforming Your Vision<br>Port Harcourt, Nigeria | 07038655690</footer> <!-- Green Giant Multiverse - Official Socials -->
-<div class="social-links" style="display:flex; gap:15px; justify-content:center; align-items:center; flex-wrap:wrap; margin-top:20px;">
-  <a href="https://www.linkedin.com/in/wisdom-samuel-a4793b413" target="_blank" title="LinkedIn">LinkedIn</a>
-  <a href="https://facebook.com/greengiantmultiverse" target="_blank" title="Facebook">Facebook: @greengiantmultiverse</a>
-  <a href="https://x.com/GREENMULTIVERSE" target="_blank" title="X / Twitter">X: @GREENMULTIVERSE</a>
-  <a href="https://www.tiktok.com/@green.giant.multi" target="_blank" title="TikTok">TikTok: green.giant.multi</a>
-</div>
 
-<!-- With Icons (if your site uses Font Awesome) - USE THIS ONE if you have icons -->
-<div class="social-icons" style="display:flex; gap:15px; justify-content:center; margin-top:20px;">
-  <a href="https://www.linkedin.com/in/wisdom-samuel-a4793b413?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-  <a href="https://facebook.com/greengiantmultiverse" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-  <a href="https://x.com/GREENMULTIVERSE" target="_blank"><i class="fab fa-twitter"></i> X</a>
-  <a href="https://www.tiktok.com/@green.giant.multi" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-</div>
+  <div class="contact-links">
+    <a href="mailto:greengiantmultiverse@gmail.com"><i class="fas fa-envelope"></i> greengiantmultiverse@gmail.com</a>
+    <a href="https://wa.me/2347038655690" target="_blank"><i class="fab fa-whatsapp"></i> +234 703 865 5690</a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-brand">
+    <img src="logo.png" alt="Logo" width="36" height="36">
+    <span>GREEN GIANT MULTIVERSE</span>
+  </div>
+  <p>© 2026 Green Giant Multiverse — Expanding Your Universe, Transforming Your Vision</p>
+  <p>Port Harcourt, Nigeria | 07038655690</p>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/wisdom-samuel-a4793b413" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://facebook.com/greengiantmultiverse" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/GREENMULTIVERSE" target="_blank" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.tiktok.com/@green.giant.multi" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
